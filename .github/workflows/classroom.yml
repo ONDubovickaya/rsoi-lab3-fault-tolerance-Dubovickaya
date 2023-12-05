@@ -75,6 +75,7 @@ jobs:
         timeout-minutes: 1
         run:
           docker-compose logs -t -f gateway
+      
       - name: Stop containers
         if: always()
         continue-on-error: true
