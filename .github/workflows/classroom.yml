@@ -24,6 +24,7 @@ jobs:
         uses: stCarolas/setup-maven@v4.4
         with:
           maven-version: 3.8.6
+        
       - name: Build Gateway to jar
         run: mvn -f src/Gateway/pom.xml --batch-mode --update-snapshots clean package
       - name: Build Cars to jar
